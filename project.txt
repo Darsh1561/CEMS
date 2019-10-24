@@ -1,0 +1,52 @@
+struct Event
+{
+int E_d;
+char E_Name[50];
+int E_date;
+char E_description[100];
+}e[10];
+struct Faculty
+{
+int F_id;
+char F_name[20];
+char F_presence;
+char E_success[10];
+char E_suggestion[100];
+}f[10];
+struct Student
+{
+int S_id;
+char S_name[20];
+char S_presence;
+char E_success[10];
+char E_feedback[100];
+}s[10];
+
+
+//main
+
+//1
+
+for(i=0;i<f;i++)
+if(f[i].F_presence=='y')
+c++;
+
+for(i=0;i<f;i++)
+if(c==f && strcmp(e[i].E_success,successful)==0)
+printf("\n %s",e[i].E_name)
+
+//2
+
+for(i=0;i<f;i++)
+{
+for(j=0;j<i;j++)
+{
+if(e[i].e_date<e[j].date)
+{
+t=e[i].date;
+e[i].date=e[j].date;
+e[j].date=t;
+}
+}
+}
+}
